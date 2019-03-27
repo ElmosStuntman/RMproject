@@ -1,0 +1,10 @@
+C:\Users\cft60\source\repos\RMproject\RMproject\obj\Debug\RMproject.csprojAssemblyReference.cache
+C:\Users\cft60\source\repos\RMproject\RMproject\obj\Debug\RMproject.csproj.CoreCompileInputs.cache
+C:\Users\cft60\source\repos\RMproject\RMproject\bin\Debug\RMproject.exe.config
+C:\Users\cft60\source\repos\RMproject\RMproject\bin\Debug\RMproject.exe
+C:\Users\cft60\source\repos\RMproject\RMproject\bin\Debug\RMproject.pdb
+C:\Users\cft60\source\repos\RMproject\RMproject\bin\Debug\RestSharp.dll
+C:\Users\cft60\source\repos\RMproject\RMproject\bin\Debug\RestSharp.xml
+C:\Users\cft60\source\repos\RMproject\RMproject\obj\Debug\RMproject.csproj.CopyComplete
+C:\Users\cft60\source\repos\RMproject\RMproject\obj\Debug\RMproject.exe
+C:\Users\cft60\source\repos\RMproject\RMproject\obj\Debug\RMproject.pdb
