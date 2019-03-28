@@ -50,14 +50,16 @@ namespace ConsoleApp1
             var envPath = @"%userprofile%\Downloads\Data.txt";
             var filePath = Environment.ExpandEnvironmentVariables(envPath);
 
+            
+
             string content;
             Boolean exists;
-            exists = File.Exists(@"%userprofile%\Downloads\Data.txt");
+            exists = File.Exists(filePath);
             
             if (exists)
             {
 
-                 content = File.ReadAllText(@"%userprofile%\Downloads\Data.txt");
+                 content = File.ReadAllText(filePath);
             }
             else
             {
@@ -119,7 +121,12 @@ namespace ConsoleApp1
                     case 4:
                         Console.WriteLine("Which ID would you like to delete?");
                         Console.WriteLine("Please enter a character ID between 0 and {0}", res.results.Count - 1);
-                        index = Convert.ToInt32(Console.ReadLine());
+
+                        //Fix this to test parse for a number
+                        bool ifsuccess;
+                        
+                        ifsuccess = Int32.TryParse(Console.ReadLine(), out index);
+                 //       index = Convert.ToInt32(Console.ReadLine());
                         res.results.RemoveAt(index);
 
                         //call method for to enter ID# and delete it from list
@@ -130,10 +137,10 @@ namespace ConsoleApp1
             }
             while (userInput != 5);
 
-          //saves any changes inputed through method and updates file.
+            //saves any changes inputed through method and updates file.
 
             string data = SimpleJson.SerializeObject(res);
-            System.IO.File.WriteAllText(@"%userprofile%\Downloads\Data.txt", data);
+            File.WriteAllText(filePath, data);
 
         }
 
